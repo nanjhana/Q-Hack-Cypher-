@@ -1,0 +1,13 @@
+# macOS system files
+.DS_Store
+
+# Environment variables
+.env
+.env.local
+
+# Common build & package artifacts
+node_modules/
+dist/
+build/
+__pycache__/
+*.pyc
