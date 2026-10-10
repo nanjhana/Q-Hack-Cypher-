@@ -11,3 +11,8 @@ dist/
 build/
 __pycache__/
 *.pyc
+
+# Python tooling
+.venv/
+.pytest_cache/
+.streamlit/secrets.toml

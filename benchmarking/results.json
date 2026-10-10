@@ -1,0 +1,55 @@
+{
+  "generated_at": "2026-10-06T22:22:01+05:30",
+  "note": "Real local measurements produced by benchmarking/run_benchmarks.py. Do not hand-edit.",
+  "pqc_backend": "cryptography/OpenSSL (ML-KEM-768, hardened)",
+  "pqc_backend_hardened": true,
+  "machine": {
+    "cpu": "Apple M4",
+    "machine": "arm64",
+    "os": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "python": "3.14.8"
+  },
+  "modes": {
+    "CLASSICAL": {
+      "algorithms": "X25519 + AES-256-GCM",
+      "handshake_ms_median": 0.128040999697987,
+      "handshake_ms_mean": 0.13361702498514205,
+      "handshake_ms_p95": 0.15079200238687918,
+      "handshake_ms_min": 0.1266249964828603,
+      "handshake_ms_max": 0.3712920006364584,
+      "handshake_bytes": 64,
+      "runs": 200,
+      "warmup": 10
+    },
+    "QUANTUM_SAFE": {
+      "algorithms": "ML-KEM-768 + AES-256-GCM",
+      "handshake_ms_median": 0.16654150022077374,
+      "handshake_ms_mean": 0.17188060512125958,
+      "handshake_ms_p95": 0.18704100511968136,
+      "handshake_ms_min": 0.164333003340289,
+      "handshake_ms_max": 0.47708299825899303,
+      "handshake_bytes": 2272,
+      "runs": 200,
+      "warmup": 10
+    },
+    "HYBRID": {
+      "algorithms": "X25519 + ML-KEM-768 + AES-256-GCM",
+      "handshake_ms_median": 0.29372900098678656,
+      "handshake_ms_mean": 0.2991750100409263,
+      "handshake_ms_p95": 0.3185840032529086,
+      "handshake_ms_min": 0.2900420004152693,
+      "handshake_ms_max": 0.49329200555803254,
+      "handshake_bytes": 2336,
+      "runs": 200,
+      "warmup": 10
+    }
+  },
+  "aes": {
+    "algorithm": "AES-256-GCM",
+    "mb_per_s": 3930.8871746421755,
+    "decrypt_mb_per_s": 3855.726488884172,
+    "payload_bytes": 1000000,
+    "ciphertext_overhead_bytes": 28,
+    "runs": 20
+  }
+}

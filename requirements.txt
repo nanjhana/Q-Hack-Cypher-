@@ -1,0 +1,13 @@
+# Core (spec Section 9 / Step 2)
+cryptography>=50.0      # AES-256-GCM, X25519, HKDF, and native OpenSSL-backed ML-KEM-768
+streamlit>=1.50
+pandas
+altair                  # charts (installed with streamlit; listed explicitly)
+pytest
+
+# PQC fallback (spec Option B): pure-Python educational ML-KEM, used only if no hardened backend exists
+kyber-py
+
+# Optional (spec Option A): liboqs-python needs the native liboqs C library (git + cmake + C compiler).
+# It is auto-detected and preferred if `liboqs` is installed in ~/_oqs or on the library path.
+# liboqs-python
